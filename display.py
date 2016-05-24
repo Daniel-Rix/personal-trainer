@@ -3,18 +3,15 @@ from time import sleep
 
 sense = SenseHat()
 
-W = [255, 255, 255] #white
+w = [255, 255, 255] #white
 r = [255, 0, 0] #red
 b = [0, 0, 255] #blue
 g = [0, 255, 0] #green
 y = [255, 255, 0] #yellow
 n = [0, 0, 0] #nothing
 p = [139, 15, 255] #perse purple
+m = [255, 0, 255] #lurid pink
 o = [255, 128, 0] #orange
-o1 = [255, 153, 51] #light orange
-o2 = [255, 178, 102] #pale orange
-o3 = [255, 204, 153] #peach/overwashed orange
-ni = [0, 0, 0] #nothing
 
 play = [
 n,n,g,n,n,n,n,n,
@@ -92,50 +89,7 @@ charactermap = [
 	]
 
 load0 = [
-o2,ni,o1,o,ni,o3,ni,o2,
-ni,o2,o1,o,ni,o3,o2,ni,
-o3,o3,o2,o,o3,o2,o1,o1,
-ni,ni,o3,o,o,o,o,o,
-o,o,o,o,o,o3,ni,ni,
-o1,o1,o2,o3,o,o2,o3,o3,
-ni,o2,o3,ni,o,o1,o2,ni,
-o2,ni,o3,ni,o,o1,ni,o2
-]
-
-
-load1 = [
-o3,ni,o2,o1,ni,o,ni,o3,
-ni,o3,o2,o1,ni,o,o3,ni,
-o,o,o3,o2,o,o3,o2,o2,
-ni,ni,o,o,o,o1,o1,o1,
-o1,o1,o1,o,o,o,ni,ni,
-o2,o2,o3,o,o1,o3,o,o,
-ni,o3,o,ni,o1,o2,o3,ni,
-o3,ni,o,ni,o1,o2,ni,o3
-]
-
-
-load2 = [
-o,ni,o3,o2,ni,o1,ni,o,
-ni,o,o3,o2,ni,o1,o,ni,
-o1,o1,o,o2,o1,o,o3,o3,
-ni,ni,o1,o,o,o2,o2,o2,
-o2,o2,o2,o,o,o1,ni,ni,
-o3,o3,o,o1,o2,o,o1,o1,
-ni,o,o1,ni,o2,o3,o,ni,
-o,ni,o1,ni,o2,o3,ni,o
-]
-
-load3 = [
-o1,ni,o,o3,ni,o2,ni,o1,
-ni,o1,o,o3,ni,o2,o1,ni,
-o2,o2,o1,o,o2,o1,o,o,
-ni,ni,o2,o,o,o,o3,o3,
-o3,o3,o,o,o,o2,ni,ni,
-o,o,o1,o2,o,o1,o2,o2,
-ni,o1,o2,ni,o3,o,o1,ni,
-o1,ni,o2,ni,o3,o,ni,o1
-]
+b,g,y,o,r,m,p,b,	
 
 sense.set_pixels(play)
 sleep(1)
